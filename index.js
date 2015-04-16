@@ -18,6 +18,9 @@
     var width = img.width;
     var height = img.height;
 
+    canvas.width = width;
+    canvas.height = height;
+
     ctx.save();
     switch (+orientation) {
       // 1 = The 0th row is at the visual top of the image, and the 0th column is the visual left-hand side.
