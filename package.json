@@ -1,0 +1,21 @@
+{
+  "name": "canvas-exif-orientation",
+  "version": "0.1.0",
+  "description": "Canvas drawImage dependent on Exif Orientaion",
+  "main": "index.js",
+  "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "browser",
+    "canvas",
+    "exif"
+  ],
+  "author": "koba04",
+  "license": "MIT"
+}
