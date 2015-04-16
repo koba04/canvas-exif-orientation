@@ -9,14 +9,14 @@
 }(this, function () {
   'use strict';
 
-  function drawImage(img, orientation) {
+  function drawImage(img, orientation, x, y, width, height) {
     if (!/^[1-8]$/.test(orientation)) throw new Error('orientation should be [1-8]');
 
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
 
-    var width = img.width;
-    var height = img.height;
+    width = width || img.width;
+    height = height || img.height;
 
     canvas.width = width;
     canvas.height = height;
@@ -79,7 +79,7 @@
           break;
     }
 
-    ctx.drawImage(img, 0, 0, width, height);
+    ctx.drawImage(img, x, y, width, height);
     ctx.restore();
 
     return canvas;
