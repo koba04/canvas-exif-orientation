@@ -1,6 +1,6 @@
 {
   "name": "canvas-exif-orientation",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Canvas drawImage dependent on Exif Orientaion",
   "main": "index.js",
   "scripts": {
