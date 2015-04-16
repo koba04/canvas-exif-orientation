@@ -12,12 +12,13 @@
   function drawImage(img, orientation, x, y, width, height) {
     if (!/^[1-8]$/.test(orientation)) throw new Error('orientation should be [1-8]');
 
+    if (x == null) x = 0;
+    if (y == null) y = 0;
+    if (width == null) width = img.width;
+    if (height == null) height = img.height;
+
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
-
-    width = width || img.width;
-    height = height || img.height;
-
     canvas.width = width;
     canvas.height = height;
 
